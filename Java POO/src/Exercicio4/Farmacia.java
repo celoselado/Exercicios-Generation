@@ -18,6 +18,16 @@ public class Farmacia {
 		this.peso = peso;
 		this.preço = preço;
 	}
+	
+	
+
+	public Farmacia(String nome, int idade, double preço) {
+		this.nome = nome;
+		this.idade = idade;
+		this.preço = preço;
+	}
+
+
 
 	public String getNome() {
 		return nome;
@@ -70,6 +80,10 @@ public class Farmacia {
 	
 	public void imprimir() {
 		System.out.println("Remédio: "+nome+"\nA partir de: "+idade+" anos"+"\nQuantidade: "+peso+"g"+"\nQuantidade em comprimidos: "+comprimidos+"\nValor: "+this.moeda());
+	}
+	
+	public void imprimir2() {
+		System.out.println("Produto: "+nome+"\nA partir de: "+idade+" anos"+"\nValor: "+this.moeda());
 	}
 	
 }
